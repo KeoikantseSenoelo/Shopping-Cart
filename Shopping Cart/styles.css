@@ -1,0 +1,60 @@
+/* Custom styles for the shopping cart */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #343a40;
+}
+
+table th, table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#quantity {
+    width: 100px;
+}
+
+#total-cost {
+    font-weight: bold;
+    color: #007bff;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Additional padding for the container */
+.container {
+    padding-top: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    #quantity {
+        width: 80px;
+    }
+}
+
+
+.free-delivery-message {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: larger;
+}
