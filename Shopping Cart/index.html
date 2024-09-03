@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+     <!-- View Cart Button with Item Count -->
+<!-- Shopping Cart Icon -->
+<div id="cart-icon" onclick="window.location.href='cart.html'">
+    <i class="fas fa-shopping-bag"></i>
+    <span id="cart-count">0</span>
+</div>
+
+
+        </div>
+
+        <h1 class="my-4">Products</h1>
+
+        <!-- Product List -->
+        <section id="product-list" class="row">
+            <div class="col-md-4 product">
+                <img src="./image/useP.webp" alt="Perfume" class="img-fluid">
+                <h3>Estee Lauder Advanced Night Repair Eye Concentrate Matrix 15ml</h3>
+                <p>Price: $40.00</p>
+                <input type="number" class="product-quantity" data-product-id="1" data-product-name="Car Mount Phone Holder" data-product-price="10.00" min="1" placeholder="Enter quantity">
+                <button class="add-to-cart btn btn-primary" data-product-id="1" data-product-name="Car Mount Phone Holder" data-product-price="10.00">Add to Cart</button>
+            </div>
+            <div class="col-md-4 product">
+                <img src="./image/makeup.file" alt="MakeUp Kit" class="img-fluid">
+                <h3>Make Up Kit Portable</h3>
+                <p>Price: $20.00</p>
+                <input type="number" class="product-quantity" data-product-id="2" data-product-name="BMW Boot Mat" data-product-price="70.00" min="1" placeholder="Enter quantity">
+                <button class="add-to-cart btn btn-primary" data-product-id="2" data-product-name="BMW Boot Mat" data-product-price="70.00">Add to Cart</button>
+            </div>
+            <div class="col-md-4 product">
+                <img src="./image/haird.file" alt="Hairdryer" class="img-fluid">
+                <h3>Moyoko E8 UltraBlast Hairdryer - Fast Drying Hair Dryer - 2400W</h3>
+                <p>Price: $65.00</p>
+                <input type="number" class="product-quantity" data-product-id="3" data-product-name="Samsung Silicone Case" data-product-price="25.00" min="1" placeholder="Enter quantity">
+                <button class="add-to-cart btn btn-primary" data-product-id="3" data-product-name="Samsung Silicone Case" data-product-price="25.00">Add to Cart</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

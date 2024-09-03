@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex justify-content-between align-items-center my-4">
+            <h1>Your Cart</h1>
+            <a href="index.html" class="btn btn-outline-primary">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i> Continue Shopping
+            </a>
+        </header>
+
+        <!-- Shopping Cart -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div id="cart-contents">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <!-- Cart items will be dynamically inserted here -->
+                        </tbody>
+                    </table>
+                    <div id="cart-summary" class="my-4">
+                        <h3>Cart Summary</h3>
+                        <p>Total Cost: $<span id="total-cost">0.00</span></p>
+                        <p>Delivery: 1-5 working days</p>
+                    </div>
+                    <div class="cart-buttons">
+                        <button class="btn btn-success">Checkout</button>
+                        <button class="btn btn-secondary">Continue Shopping</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
